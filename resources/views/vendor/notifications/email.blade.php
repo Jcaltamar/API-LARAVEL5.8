@@ -48,7 +48,11 @@
 
 {{-- Subcopy --}}
 @isset($actionText)
+<<<<<<< HEAD
 @slot('subcopy')
+=======
+@component('mail::subcopy')
+>>>>>>> f30176aacdea85921e3bde11beed630223ffbb9b
 @lang(
     "If you’re having trouble clicking the \":actionText\" button, copy and paste the URL below\n".
     'into your web browser: [:actionURL](:actionURL)',
@@ -57,6 +61,10 @@
         'actionURL' => $actionUrl,
     ]
 )
+<<<<<<< HEAD
 @endslot
+=======
+@endcomponent
+>>>>>>> f30176aacdea85921e3bde11beed630223ffbb9b
 @endisset
 @endcomponent

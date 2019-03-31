@@ -470,7 +470,11 @@
                         @yield('message')
                     </p>
 
+<<<<<<< HEAD
                     <a href="{{ app('router')->has('home') ? route('home') : url('/') }}">
+=======
+                    <a href="{{ url('/') }}">
+>>>>>>> f30176aacdea85921e3bde11beed630223ffbb9b
                         <button class="bg-transparent text-grey-darkest font-bold uppercase tracking-wide py-3 px-6 border-2 border-grey-light hover:border-grey rounded-lg">
                             {{ __('Go Home') }}
                         </button>
