@@ -16,14 +16,10 @@
         "laravel/passport": "^7.0",
         "laravel/tinker": "^1.0",
         "infyomlabs/laravel-generator": "5.8.x-dev",
-        "laravelcollective/html": "^5.8.0",
+       "laravelcollective/html": "^5.8.0",
         "infyomlabs/adminlte-templates": "5.8.x-dev",
-<<<<<<< HEAD
-        "infyomlabs/swagger-generator": "dev-master"
-=======
         "infyomlabs/swagger-generator": "dev-master",
         "doctrine/dbal": "~2.3"
->>>>>>> 09ea6513d47df2043fefe607554c55997c7f3477
     },
     "require-dev": {
         "appointer/swaggervel": "^2.3",
