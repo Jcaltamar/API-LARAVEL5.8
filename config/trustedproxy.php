@@ -2,6 +2,7 @@
 
 return [
 
+
     /*
      * Set trusted proxy IP addresses.
      *
