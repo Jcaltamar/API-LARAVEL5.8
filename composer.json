@@ -18,10 +18,10 @@
         "infyomlabs/laravel-generator": "5.8.x-dev",
         "laravelcollective/html": "^5.8.0",
         "infyomlabs/adminlte-templates": "5.8.x-dev",
-        "infyomlabs/swagger-generator": "dev-master",
-        "appointer/swaggervel": "dev-master"
+        "infyomlabs/swagger-generator": "dev-master"
     },
     "require-dev": {
+        "appointer/swaggervel": "^2.3",
         "beyondcode/laravel-dump-server": "^1.0",
         "filp/whoops": "^2.0",
         "fzaninotto/faker": "^1.4",
