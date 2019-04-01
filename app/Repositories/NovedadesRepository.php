@@ -2,16 +2,16 @@
 
 namespace App\Repositories;
 
-use App\Models\Noticia;
+use App\Models\Novedades;
 use App\Repositories\BaseRepository;
 
 /**
- * Class NoticiaRepository
+ * Class NovedadesRepository
  * @package App\Repositories
- * @version April 1, 2019, 4:47 pm UTC
+ * @version April 1, 2019, 5:13 pm UTC
 */
 
-class NoticiaRepository extends BaseRepository
+class NovedadesRepository extends BaseRepository
 {
     /**
      * @var array
@@ -19,7 +19,8 @@ class NoticiaRepository extends BaseRepository
     protected $fieldSearchable = [
         'Titulo',
         'descripcion',
-        'Urlimage'
+        'usuario',
+        'correo'
     ];
 
     /**
@@ -37,6 +38,6 @@ class NoticiaRepository extends BaseRepository
      **/
     public function model()
     {
-        return Noticia::class;
+        return Novedades::class;
     }
 }
