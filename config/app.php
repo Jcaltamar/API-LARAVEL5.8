@@ -182,6 +182,7 @@ return [
         \InfyOm\Generator\InfyOmGeneratorServiceProvider::class,
         \InfyOm\AdminLTETemplates\AdminLTETemplatesServiceProvider::class,
         Appointer\Swaggervel\SwaggervelServiceProvider::class,
+        L5Swagger\L5SwaggerServiceProvider::class,
 
 
 
@@ -238,6 +239,7 @@ return [
         'Form'      => Collective\Html\FormFacade::class,
         'Html'      => Collective\Html\HtmlFacade::class,
         'Flash'     => Laracasts\Flash\Flash::class,
+
     ],
 
 ];
