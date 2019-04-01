@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+@extends('errors::minimal')
+
+@section('title', __('Service Unavailable'))
+@section('code', '503')
+@section('message', __($exception->getMessage() ?: 'Service Unavailable'))
+=======
 @extends('errors::illustrated-layout')
 
 @section('code', '503')
@@ -9,3 +16,4 @@
 @endsection
 
 @section('message', __($exception->getMessage() ?: __('Sorry, we are doing some maintenance. Please check back soon.')))
+>>>>>>> f30176aacdea85921e3bde11beed630223ffbb9b

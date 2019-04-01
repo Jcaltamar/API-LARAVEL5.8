@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+@extends('errors::minimal')
+
+@section('title', __('Not Found'))
+@section('code', '404')
+@section('message', __('Not Found'))
+=======
 @extends('errors::illustrated-layout')
 
 @section('code', '404')
@@ -10,3 +17,4 @@
 
 
 @section('message', __('Sorry, the page you are looking for could not be found.'))
+>>>>>>> f30176aacdea85921e3bde11beed630223ffbb9b
