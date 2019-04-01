@@ -6,19 +6,20 @@ use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * Class Noticia
+ * Class Novedades
  * @package App\Models
- * @version April 1, 2019, 4:47 pm UTC
+ * @version April 1, 2019, 5:13 pm UTC
  *
- * @property string Titulo
+ * @property  Titulo
  * @property string descripcion
- * @property string Urlimage
+ * @property string usuario
+ * @property string correo
  */
-class Noticia extends Model
+class Novedades extends Model
 {
     use SoftDeletes;
 
-    public $table = 'noticias';
+    public $table = 'novedades';
     
 
     protected $dates = ['deleted_at'];
@@ -27,7 +28,8 @@ class Noticia extends Model
     public $fillable = [
         'Titulo',
         'descripcion',
-        'Urlimage'
+        'usuario',
+        'correo'
     ];
 
     /**
@@ -36,9 +38,9 @@ class Noticia extends Model
      * @var array
      */
     protected $casts = [
-        'Titulo' => 'string',
         'descripcion' => 'string',
-        'Urlimage' => 'string'
+        'usuario' => 'string',
+        'correo' => 'string'
     ];
 
     /**
@@ -49,7 +51,7 @@ class Noticia extends Model
     public static $rules = [
         'Titulo' => 'required',
         'descripcion' => 'required',
-        'Urlimage' => 'required'
+        'usuario' => 'required'
     ];
 
     
