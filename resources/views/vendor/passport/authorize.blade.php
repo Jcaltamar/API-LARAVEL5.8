@@ -64,7 +64,11 @@
 
                         <div class="buttons">
                             <!-- Authorize Button -->
+<<<<<<< HEAD
+                            <form method="post" action="{{ route('passport.authorizations.approve') }}">
+=======
                             <form method="post" action="{{ url('/oauth/authorize') }}">
+>>>>>>> f30176aacdea85921e3bde11beed630223ffbb9b
                                 {{ csrf_field() }}
 
                                 <input type="hidden" name="state" value="{{ $request->state }}">
@@ -73,7 +77,11 @@
                             </form>
 
                             <!-- Cancel Button -->
+<<<<<<< HEAD
+                            <form method="post" action="{{ route('passport.authorizations.deny') }}">
+=======
                             <form method="post" action="{{ url('/oauth/authorize') }}">
+>>>>>>> f30176aacdea85921e3bde11beed630223ffbb9b
                                 {{ csrf_field() }}
                                 {{ method_field('DELETE') }}
 

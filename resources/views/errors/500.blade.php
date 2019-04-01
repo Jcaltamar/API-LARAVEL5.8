@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+@extends('errors::minimal')
+
+@section('title', __('Server Error'))
+@section('code', '500')
+@section('message', __('Server Error'))
+=======
 @extends('errors::illustrated-layout')
 
 @section('code', '500')
@@ -9,3 +16,4 @@
 @endsection
 
 @section('message', __('Whoops, something went wrong on our servers.'))
+>>>>>>> f30176aacdea85921e3bde11beed630223ffbb9b

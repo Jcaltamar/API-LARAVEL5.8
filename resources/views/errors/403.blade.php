@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+@extends('errors::minimal')
+
+@section('title', __('Forbidden'))
+@section('code', '403')
+@section('message', __($exception->getMessage() ?: 'Forbidden'))
+=======
 @extends('errors::illustrated-layout')
 
 @section('code', '403')
@@ -9,3 +16,4 @@
 @endsection
 
 @section('message', __($exception->getMessage() ?: __('Sorry, you are forbidden from accessing this page.')))
+>>>>>>> f30176aacdea85921e3bde11beed630223ffbb9b
