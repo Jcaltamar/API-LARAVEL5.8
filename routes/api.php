@@ -19,7 +19,7 @@ use LaravelFCM\Message\PayloadNotificationBuilder;
 
 Route::group(['prefix' => 'auth'], function () {
     //Route::post('register', 'Auth\RegisterController@register');
-    Route::post('login','Auth\LoginController@login');
+    //Route::post('login','Auth\LoginController@login');
 });
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
