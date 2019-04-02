@@ -8,11 +8,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class Noticia
  * @package App\Models
- * @version April 1, 2019, 4:47 pm UTC
+ * @version April 2, 2019, 1:34 pm UTC
  *
- * @property string Titulo
- * @property string descripcion
- * @property string Urlimage
  */
 class Noticia extends Model
 {
@@ -25,9 +22,7 @@ class Noticia extends Model
 
 
     public $fillable = [
-        'Titulo',
-        'descripcion',
-        'Urlimage'
+        
     ];
 
     /**
@@ -36,9 +31,7 @@ class Noticia extends Model
      * @var array
      */
     protected $casts = [
-        'Titulo' => 'string',
-        'descripcion' => 'string',
-        'Urlimage' => 'string'
+        
     ];
 
     /**
@@ -47,9 +40,7 @@ class Noticia extends Model
      * @var array
      */
     public static $rules = [
-        'Titulo' => 'required',
-        'descripcion' => 'required',
-        'Urlimage' => 'required'
+        
     ];
 
     

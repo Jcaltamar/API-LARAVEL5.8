@@ -42,9 +42,6 @@ trait MakeNoticiaTrait
         $fake = Faker::create();
 
         return array_merge([
-            'Titulo' => $fake->word,
-            'Descripcion' => $fake->word,
-            'urlimg' => $fake->word,
             'created_at' => $fake->date('Y-m-d H:i:s'),
             'updated_at' => $fake->date('Y-m-d H:i:s')
         ], $noticiaFields);
