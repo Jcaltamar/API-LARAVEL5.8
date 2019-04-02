@@ -21,7 +21,7 @@ class Noticia extends Model
     protected $dates = ['deleted_at'];
 
 
-    public $fillable = [
+    public $fillable = ['Titulo','descripcion','Urlimage'
         
     ];
 
