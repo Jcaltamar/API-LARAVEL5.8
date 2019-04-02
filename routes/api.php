@@ -90,4 +90,4 @@ Route::middleware('client')->get('/clientsCredentials', function (Request $reque
 
 
 
-Route::resource('noticias', 'API\NoticiaAPIController');
+Route::resource('noticias', '/API/NoticiaAPIController');
