@@ -6,10 +6,43 @@ use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * Class Noticia
- * @package App\Models
- * @version April 2, 2019, 1:34 pm UTC
- *
+ * @SWG\Definition(
+ *      definition="Noticia",
+ *      required={"Titulo", "Descripcion", "UrlImage"},
+ *      @SWG\Property(
+ *          property="id",
+ *          description="id",
+ *          type="integer",
+ *          format="int32"
+ *      ),
+ *      @SWG\Property(
+ *          property="Titulo",
+ *          description="Titulo",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="Descripcion",
+ *          description="Descripcion",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="UrlImage",
+ *          description="UrlImage",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="created_at",
+ *          description="created_at",
+ *          type="string",
+ *          format="date-time"
+ *      ),
+ *      @SWG\Property(
+ *          property="updated_at",
+ *          description="updated_at",
+ *          type="string",
+ *          format="date-time"
+ *      )
+ * )
  */
 class Noticia extends Model
 {
@@ -21,8 +54,10 @@ class Noticia extends Model
     protected $dates = ['deleted_at'];
 
 
-    public $fillable = ['Titulo','descripcion','Urlimage'
-        
+    public $fillable = [
+        'Titulo',
+        'Descripcion',
+        'UrlImage'
     ];
 
     /**
@@ -31,7 +66,9 @@ class Noticia extends Model
      * @var array
      */
     protected $casts = [
-        
+        'Titulo' => 'string',
+        'Descripcion' => 'string',
+        'UrlImage' => 'string'
     ];
 
     /**
@@ -40,7 +77,9 @@ class Noticia extends Model
      * @var array
      */
     public static $rules = [
-        
+        'Titulo' => 'required',
+        'Descripcion' => 'required',
+        'UrlImage' => 'required'
     ];
 
     

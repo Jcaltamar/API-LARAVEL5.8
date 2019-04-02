@@ -1,14 +1,18 @@
 <table class="table table-responsive" id="noticias-table">
     <thead>
         <tr>
-            
+            <th>Titulo</th>
+        <th>Descripcion</th>
+        <th>Urlimage</th>
             <th colspan="3">Action</th>
         </tr>
     </thead>
     <tbody>
     @foreach($noticias as $noticia)
         <tr>
-            
+            <td>{!! $noticia->Titulo !!}</td>
+            <td>{!! $noticia->Descripcion !!}</td>
+            <td>{!! $noticia->UrlImage !!}</td>
             <td>
                 {!! Form::open(['route' => ['noticias.destroy', $noticia->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>
