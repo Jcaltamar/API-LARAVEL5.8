@@ -12,7 +12,7 @@ use Response;
 
 /**
  * Class NoticiaController
- * @package App\Http\Controllers\API
+ * @package App\Http\Controllers
  */
 
 class NoticiaAPIController extends AppBaseController
