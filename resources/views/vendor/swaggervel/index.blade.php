@@ -66,8 +66,8 @@
 
 <div id="swagger-ui"></div>
 
-<script src="{{ $host . $uiResourcePath . '/swagger-ui-bundle.js' }}"></script>
-<script src="{{ $host . $uiResourcePath . '/swagger-ui-standalone-preset.js' }}"></script>
+<script src="{{ $host.'/' . $uiResourcePath . '/swagger-ui-bundle.js' }}"></script>
+<script src="{{ $host .'/'. $uiResourcePath . '/swagger-ui-standalone-preset.js' }}"></script>
 <script>
 
     window.onload = function () {

@@ -20,7 +20,7 @@ return [
       | Relative path to access public UI resources.
       |--------------------------------------------------------------------------
      */
-    'ui-resource-path' => 'vendor/swaggervel',
+    'ui-resource-path' => '/vendor/swaggervel',
 
     /*
       |--------------------------------------------------------------------------
