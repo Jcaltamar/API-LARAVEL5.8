@@ -73,7 +73,7 @@
     window.onload = function () {
         // Build a system
         const ui = SwaggerUIBundle({
-            url: '{{ $host . $urlToDocs }}',
+            url: '{{ $host .'/'. $urlToDocs }}',
             dom_id: '#swagger-ui',
             deepLinking: true,
             presets: [
