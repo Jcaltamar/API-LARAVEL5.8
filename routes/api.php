@@ -21,9 +21,7 @@ use LaravelFCM\Message\PayloadNotificationBuilder;
 Route::group(['prefix' => 'auth'], function () {
     Route::post('register', 'Auth\RegisterController@register');
     Route::post('login','Auth\LoginController@login');
-    Route::resource('noticias', 'NoticiaController');
 
-    Route::resource('novedades', 'NovedadesController');
 });
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
@@ -90,4 +88,4 @@ Route::middleware('client')->get('/clientsCredentials', function (Request $reque
 
 
 
-Route::resource('noticias', '\API\NoticiaAPIController');
+Route::resource('noticias', 'API\NoticiaAPIController');
