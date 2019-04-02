@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/login');
 });
 
 
@@ -20,10 +20,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-
-Route::resource('noticias', 'NoticiaController');
-
-Route::resource('novedades', 'NovedadesController');
 
 
 Route::resource('noticias', 'NoticiaController');
