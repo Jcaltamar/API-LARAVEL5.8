@@ -12,9 +12,9 @@
     @foreach($novedades as $novedades)
         <tr>
             <td>{!! $novedades->Titulo !!}</td>
-            <td>{!! $novedades->descripcion !!}</td>
-            <td>{!! $novedades->usuario !!}</td>
-            <td>{!! $novedades->correo !!}</td>
+            <td>{!! $novedades->Descripcion !!}</td>
+            <td>{!! $novedades->Usuario !!}</td>
+            <td>{!! $novedades->Correo !!}</td>
             <td>
                 {!! Form::open(['route' => ['novedades.destroy', $novedades->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

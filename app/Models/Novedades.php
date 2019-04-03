@@ -6,14 +6,48 @@ use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * Class Novedades
- * @package App\Models
- * @version April 1, 2019, 5:13 pm UTC
- *
- * @property  Titulo
- * @property string descripcion
- * @property string usuario
- * @property string correo
+ * @SWG\Definition(
+ *      definition="Novedades",
+ *      required={"Titulo", "Descripcion", "Usuario", "Correo"},
+ *      @SWG\Property(
+ *          property="id",
+ *          description="id",
+ *          type="integer",
+ *          format="int32"
+ *      ),
+ *      @SWG\Property(
+ *          property="Titulo",
+ *          description="Titulo",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="Descripcion",
+ *          description="Descripcion",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="Usuario",
+ *          description="Usuario",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="Correo",
+ *          description="Correo",
+ *          type="string"
+ *      ),
+ *      @SWG\Property(
+ *          property="created_at",
+ *          description="created_at",
+ *          type="string",
+ *          format="date-time"
+ *      ),
+ *      @SWG\Property(
+ *          property="updated_at",
+ *          description="updated_at",
+ *          type="string",
+ *          format="date-time"
+ *      )
+ * )
  */
 class Novedades extends Model
 {
@@ -27,9 +61,9 @@ class Novedades extends Model
 
     public $fillable = [
         'Titulo',
-        'descripcion',
-        'usuario',
-        'correo'
+        'Descripcion',
+        'Usuario',
+        'Correo'
     ];
 
     /**
@@ -38,9 +72,10 @@ class Novedades extends Model
      * @var array
      */
     protected $casts = [
-        'descripcion' => 'string',
-        'usuario' => 'string',
-        'correo' => 'string'
+        'Titulo' => 'string',
+        'Descripcion' => 'string',
+        'Usuario' => 'string',
+        'Correo' => 'string'
     ];
 
     /**
@@ -50,8 +85,9 @@ class Novedades extends Model
      */
     public static $rules = [
         'Titulo' => 'required',
-        'descripcion' => 'required',
-        'usuario' => 'required'
+        'Descripcion' => 'required',
+        'Usuario' => 'required',
+        'Correo' => 'required'
     ];
 
     

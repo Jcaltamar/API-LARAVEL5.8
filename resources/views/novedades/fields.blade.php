@@ -1,19 +1,25 @@
+<!-- Titulo Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('Titulo', 'Titulo:') !!}
+    {!! Form::text('Titulo', null, ['class' => 'form-control']) !!}
+</div>
+
 <!-- Descripcion Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('descripcion', 'Descripcion:') !!}
-    {!! Form::text('descripcion', null, ['class' => 'form-control']) !!}
+    {!! Form::label('Descripcion', 'Descripcion:') !!}
+    {!! Form::text('Descripcion', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Usuario Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('usuario', 'Usuario:') !!}
-    {!! Form::text('usuario', null, ['class' => 'form-control']) !!}
+    {!! Form::label('Usuario', 'Usuario:') !!}
+    {!! Form::text('Usuario', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Correo Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('correo', 'Correo:') !!}
-    {!! Form::email('correo', null, ['class' => 'form-control']) !!}
+    {!! Form::label('Correo', 'Correo:') !!}
+    {!! Form::text('Correo', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->

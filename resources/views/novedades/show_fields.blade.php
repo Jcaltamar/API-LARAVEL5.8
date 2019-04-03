@@ -12,20 +12,20 @@
 
 <!-- Descripcion Field -->
 <div class="form-group">
-    {!! Form::label('descripcion', 'Descripcion:') !!}
-    <p>{!! $novedades->descripcion !!}</p>
+    {!! Form::label('Descripcion', 'Descripcion:') !!}
+    <p>{!! $novedades->Descripcion !!}</p>
 </div>
 
 <!-- Usuario Field -->
 <div class="form-group">
-    {!! Form::label('usuario', 'Usuario:') !!}
-    <p>{!! $novedades->usuario !!}</p>
+    {!! Form::label('Usuario', 'Usuario:') !!}
+    <p>{!! $novedades->Usuario !!}</p>
 </div>
 
 <!-- Correo Field -->
 <div class="form-group">
-    {!! Form::label('correo', 'Correo:') !!}
-    <p>{!! $novedades->correo !!}</p>
+    {!! Form::label('Correo', 'Correo:') !!}
+    <p>{!! $novedades->Correo !!}</p>
 </div>
 
 <!-- Created At Field -->
