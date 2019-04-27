@@ -94,3 +94,6 @@ Route::resource('noticias', 'API\NoticiaAPIController');
 
 
 Route::resource('novedades', 'API\NovedadesAPIController');
+
+
+Route::resource('clientes', 'clienteAPIController');
