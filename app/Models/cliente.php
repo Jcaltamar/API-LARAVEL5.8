@@ -60,8 +60,8 @@ class cliente extends Model
 
     public $table = 'clientes';
 
-    protected $hidden = ['created_at','updated_at'];
-    protected $dates = ['deleted_at'];
+    protected $hidden = ['created_at','updated_at','deleted_at'];
+
 
 
     public $fillable = [
