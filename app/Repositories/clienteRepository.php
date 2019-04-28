@@ -18,8 +18,8 @@ class clienteRepository extends BaseRepository
      */
     protected $fieldSearchable = [
         'cedula',
-        'nombre',
-        'apellido',
+        'nombres',
+        'apellidos',
         'edad',
         'estatura'
     ];
