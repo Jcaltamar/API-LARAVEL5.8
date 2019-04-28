@@ -16,6 +16,7 @@ class clienteRepository extends BaseRepository
     /**
      * @var array
      */
+    public $timestamps = false;
     protected $fieldSearchable = [
         'cedula',
         'nombres',
