@@ -59,8 +59,8 @@ class cliente extends Model
     use SoftDeletes;
 
     public $table = 'clientes';
-    
 
+    protected $hidden = ['created_at','updated_at'];
     protected $dates = ['deleted_at'];
 
 
