@@ -16,6 +16,18 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  *          format="int32"
  *      ),
  *      @SWG\Property(
+ *          property="cedula",
+ *          description="cedula",
+ *          type="integer",
+ *          format="int32"
+ *      ),
+ *     @SWG\Property(
+ *          property="edad",
+ *          description="edad",
+ *          type="integer",
+ *          format="int32"
+ *      ),
+ *      @SWG\Property(
  *          property="nombres",
  *          description="nombres",
  *          type="string"
