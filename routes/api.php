@@ -17,6 +17,7 @@ use LaravelFCM\Message\PayloadNotificationBuilder;
 |
 */
 Route::resource('clientes', 'API\clienteAPIController');
+Route::resource('personas', 'API\personaAPIController');
 
 Route::group(['prefix' => 'auth'], function () {
     Route::post('register', 'Auth\RegisterController@register');
@@ -98,4 +99,4 @@ Route::resource('novedades', 'API\NovedadesAPIController');
 
 
 
-Route::resource('personas', 'personaAPIController');
+
