@@ -66,8 +66,8 @@ class cliente extends Model
 
     public $fillable = [
         'cedula',
-        'nombre',
-        'apellido',
+        'nombres',
+        'apellidos',
         'edad',
         'estatura'
     ];
@@ -79,8 +79,8 @@ class cliente extends Model
      */
     protected $casts = [
         'cedula' => 'string',
-        'nombre' => 'string',
-        'apellido' => 'string',
+        'nombres' => 'string',
+        'apellidos' => 'string',
         'edad' => 'string',
         'estatura' => 'string'
     ];
