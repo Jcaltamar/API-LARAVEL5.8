@@ -25,6 +25,7 @@ class personaRepository extends BaseRepository
         'selfie'
     ];
 
+
     /**
      * Return searchable fields
      *
