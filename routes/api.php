@@ -16,7 +16,7 @@ use LaravelFCM\Message\PayloadNotificationBuilder;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+Route::resource('clientes', 'clienteAPIController');
 
 Route::group(['prefix' => 'auth'], function () {
     Route::post('register', 'Auth\RegisterController@register');
@@ -96,4 +96,3 @@ Route::resource('noticias', 'API\NoticiaAPIController');
 Route::resource('novedades', 'API\NovedadesAPIController');
 
 
-Route::resource('clientes', 'clienteAPIController');
