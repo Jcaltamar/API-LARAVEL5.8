@@ -21,9 +21,10 @@ Route::resource('personas', 'API\personaAPIController');
 
 Route::group(['prefix' => 'auth'], function () {
     Route::post('register', 'Auth\RegisterController@register');
-    Route::post('login','API\Auth\LoginController@login');
-
+  
 });
+  Route::post('login','API\Auth\LoginController@login');
+
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
