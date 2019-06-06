@@ -100,3 +100,6 @@ Route::resource('novedades', 'API\NovedadesAPIController');
 
 
 
+
+
+Route::resource('mensajes', 'mensajeAPIController');

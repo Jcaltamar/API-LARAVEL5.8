@@ -26,3 +26,13 @@ Route::resource('noticias', 'NoticiaController');
 
 
 Route::resource('novedades', 'NovedadesController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::resource('mensajes', 'mensajeController');
