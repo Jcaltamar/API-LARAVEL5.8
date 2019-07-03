@@ -111,15 +111,15 @@ class mensajeAPIController extends AppBaseController
     public function store(CreatemensajeAPIRequest $request)
     {
         $input = $request->all();
-
+	
         $mensaje = $this->mensajeRepository->create($input);
 
         OneSignal::sendNotificationToAll(
-            $input->mensaje,
-            $url = $input->url,
-            $data =$input->data,
-            $buttons = $input->buttons,
-            $schedule = $input->schedule
+            $request->mensaje,
+            $url = $request->url,
+            $data =null,
+            $buttons = null,
+            $schedule = null
         );
 
 

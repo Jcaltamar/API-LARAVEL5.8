@@ -9,6 +9,7 @@ use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
+use OneSignal;
 
 class mensajeController extends AppBaseController
 {
@@ -54,6 +55,14 @@ class mensajeController extends AppBaseController
      */
     public function store(CreatemensajeRequest $request)
     {
+
+	 OneSignal::sendNotificationToAll(
+        $request->mensaje, 
+        $url = $request->url, 
+        $data = null, 
+        $buttons = null, 
+        $schedule = null
+    );
         $input = $request->all();
 
         $mensaje = $this->mensajeRepository->create($input);

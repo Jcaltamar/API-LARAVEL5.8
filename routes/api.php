@@ -104,4 +104,4 @@ Route::resource('novedades', 'API\NovedadesAPIController');
 
 
 
-Route::resource('mensajes', 'mensajeAPIController');
+Route::resource('mensajes', 'API\mensajeAPIController');
