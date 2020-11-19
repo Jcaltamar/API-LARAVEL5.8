@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d786250a5a749ffd6fe12db9d294f9c",
+    "content-hash": "dc24e9285d360966705dcb0da874c837",
     "packages": [
         {
             "name": "arcanedev/log-viewer",
@@ -1680,16 +1680,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.8.21",
+            "version": "v5.8.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "c78796cc1159c8dc63c45a2011ddc4af17059cb4"
+                "reference": "78eb4dabcc03e189620c16f436358d41d31ae11f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/c78796cc1159c8dc63c45a2011ddc4af17059cb4",
-                "reference": "c78796cc1159c8dc63c45a2011ddc4af17059cb4",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/78eb4dabcc03e189620c16f436358d41d31ae11f",
+                "reference": "78eb4dabcc03e189620c16f436358d41d31ae11f",
                 "shasum": ""
             },
             "require": {
@@ -1772,6 +1772,7 @@
             "suggest": {
                 "aws/aws-sdk-php": "Required to use the SQS queue driver and SES mail driver (^3.0).",
                 "doctrine/dbal": "Required to rename columns and drop SQLite columns (^2.6).",
+                "ext-gd": "Required to use Illuminate\\Http\\Testing\\FileFactory::image().",
                 "ext-pcntl": "Required to use all features of the queue worker.",
                 "ext-posix": "Required to use all features of the queue worker.",
                 "filp/whoops": "Required for friendly error pages in development (^2.1.4).",
@@ -1823,7 +1824,11 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2019-06-05T00:13:05+00:00"
+            "support": {
+                "issues": "https://github.com/laravel/framework/issues",
+                "source": "https://github.com/laravel/framework"
+            },
+            "time": "2020-04-14T14:14:36+00:00"
         },
         {
             "name": "laravel/passport",
@@ -5174,6 +5179,69 @@
             "time": "2018-10-04T07:22:24+00:00"
         },
         {
+            "name": "beyondcode/laravel-er-diagram-generator",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/beyondcode/laravel-er-diagram-generator.git",
+                "reference": "2578ea947f1b9030221a30803385e4b4758ca323"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/beyondcode/laravel-er-diagram-generator/zipball/2578ea947f1b9030221a30803385e4b4758ca323",
+                "reference": "2578ea947f1b9030221a30803385e4b4758ca323",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "~2.3",
+                "nikic/php-parser": "^2.0|^3.0|^4.0",
+                "php": "^7.1",
+                "phpdocumentor/graphviz": "^1.0"
+            },
+            "require-dev": {
+                "larapack/dd": "^1.0",
+                "orchestra/testbench": "~3.5|~3.6|~3.7|~3.8|^4.0",
+                "phpunit/phpunit": "^7.0| ^8.0",
+                "spatie/phpunit-snapshot-assertions": "^1.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BeyondCode\\ErdGenerator\\ErdGeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BeyondCode\\ErdGenerator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcel Pociot",
+                    "email": "marcel@beyondco.de",
+                    "homepage": "https://beyondcode.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Generate ER diagrams from your Laravel models.",
+            "homepage": "https://github.com/beyondcode/laravel-er-diagram-generator",
+            "keywords": [
+                "beyondcode",
+                "laravel-er-diagram-generator"
+            ],
+            "support": {
+                "issues": "https://github.com/beyondcode/laravel-er-diagram-generator/issues",
+                "source": "https://github.com/beyondcode/laravel-er-diagram-generator/tree/1.5.0"
+            },
+            "time": "2020-10-08T13:41:25+00:00"
+        },
+        {
             "name": "doctrine/instantiator",
             "version": "1.2.0",
             "source": {
@@ -5666,6 +5734,51 @@
             ],
             "description": "Library for handling version information and constraints",
             "time": "2018-07-08T19:19:57+00:00"
+        },
+        {
+            "name": "phpdocumentor/graphviz",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/GraphViz.git",
+                "reference": "a906a90a9f230535f25ea31caf81b2323956283f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/GraphViz/zipball/a906a90a9f230535f25ea31caf81b2323956283f",
+                "reference": "a906a90a9f230535f25ea31caf81b2323956283f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "phpDocumentor": [
+                        "src/",
+                        "tests/unit"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike van Riel",
+                    "email": "mike.vanriel@naenius.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/phpDocumentor/GraphViz/issues",
+                "source": "https://github.com/phpDocumentor/GraphViz/tree/master"
+            },
+            "time": "2016-02-02T13:00:08+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -6888,5 +7001,6 @@
     "platform": {
         "php": "^7.1.3"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }
