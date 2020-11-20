@@ -1,7 +1,7 @@
 <!-- Mensaje Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('mensaje', 'Mensaje:') !!}
-    {!! Form::text('mensaje', null, ['class' => 'form-control']) !!}
+    {!! Form::textarea('mensaje', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Url Field -->
@@ -12,20 +12,20 @@
 
 <!-- Data Field -->
 <div class="form-group col-sm-12 col-lg-12">
-    {!! Form::label('data', 'Data:') !!}
-    {!! Form::textarea('data', null, ['class' => 'form-control']) !!}
+    {!! Form::label('data', 'Data:',['class' => 'hidden']) !!}
+    {!! Form::textarea('data', null, ['class' => 'form-control hidden']) !!}
 </div>
 
 <!-- Buttons Field -->
 <div class="form-group col-sm-12 col-lg-12">
-    {!! Form::label('buttons', 'Buttons:') !!}
-    {!! Form::textarea('buttons', null, ['class' => 'form-control']) !!}
+    {!! Form::label('buttons', 'Buttons:',['class' => 'hidden']) !!}
+    {!! Form::textarea('buttons', null, ['class' => 'form-control hidden']) !!}
 </div>
 
 <!-- Schedule Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('schedule', 'Schedule:') !!}
-    {!! Form::text('schedule', null, ['class' => 'form-control']) !!}
+    {!! Form::label('schedule', 'Schedule:',['class' => 'hidden']) !!}
+    {!! Form::text('schedule', null, ['class' => 'form-control hidden']) !!}
 </div>
 
 <!-- Submit Field -->

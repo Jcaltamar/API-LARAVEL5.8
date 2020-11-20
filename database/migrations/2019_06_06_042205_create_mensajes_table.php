@@ -15,11 +15,11 @@ class CreatemensajesTable extends Migration
     {
         Schema::create('mensajes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('mensaje');
-            $table->string('url');
-            $table->text('data');
-            $table->text('buttons');
-            $table->string('schedule');
+            $table->text('mensaje');
+            $table->text('url');
+            $table->text('data')->nullable(true);
+            $table->text('buttons')->nullable(true);
+            $table->string('schedule')->nullable(true);
             $table->timestamps();
             $table->softDeletes();
         });

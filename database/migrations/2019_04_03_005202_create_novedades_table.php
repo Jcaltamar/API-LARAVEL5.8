@@ -15,10 +15,10 @@ class CreateNovedadesTable extends Migration
     {
         Schema::create('novedades', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('Titulo');
-            $table->string('Descripcion');
-            $table->string('Usuario');
-            $table->string('Correo');
+            $table->string('Titulo',200);
+            $table->text('Descripcion');
+            $table->string('Usuario',200);
+            $table->string('Correo',200);
             $table->timestamps();
             $table->softDeletes();
         });
