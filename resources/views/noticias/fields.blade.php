@@ -7,13 +7,13 @@
 <!-- Descripcion Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('Descripcion', 'Descripcion:') !!}
-    {!! Form::text('Descripcion', null, ['class' => 'form-control']) !!}
+    {!! Form::textarea('Descripcion', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Urlimage Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('UrlImage', 'Urlimage:') !!}
-    {!! Form::text('UrlImage', null, ['class' => 'form-control']) !!}
+    {!! Form::textarea('UrlImage', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->
